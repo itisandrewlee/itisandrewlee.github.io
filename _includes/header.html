@@ -22,16 +22,16 @@
 		<meta property="twitter:title" content="{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}" />
 		<meta property="twitter:description" content="{% if page.description %}{{page.description}} {% else %}{{site.description}}{% endif %}" />
 		<meta property="twitter:image" content="{{ site.url }}/{% if page.image %}{{page.image}}{% else %}assets/images/favicon.png{% endif %}" />
-		<link rel="stylesheet" href="assets/css/highlight.css">
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="shortcut icon" href="assets/images/favicon.png" />
+		<link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.css">
+		<link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
+		<link rel="shortcut icon" href="{{ site.url }}/assets/images/favicon.png" />
 		<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}/atom.xml">
 		<link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.url }}/feed.json" />
 		<link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}/sitemap.xml" />
 		<meta name="google-site-verification" content="{{site.google_verify}}" />
-		<link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-		<link href="assets/fontawesome/css/brands.css" rel="stylesheet">
-		<link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+		<link href="{{ site.url }}/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+		<link href="{{ site.url }}/assets/fontawesome/css/brands.css" rel="stylesheet">
+		<link href="{{ site.url }}/assets/fontawesome/css/solid.css" rel="stylesheet">
 
 	</head>
 <body>

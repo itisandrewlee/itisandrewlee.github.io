@@ -26,7 +26,7 @@ author:
 
 
 # URL settings
-url: itisandrewlee.github.io # Domain Name of host. [username].github.io for github pages
+url: #itisandrewlee.github.io # Domain Name of host. [username].github.io for github pages
 permalink: pretty
 
 markdown: kramdown
@@ -47,7 +47,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  # - jekyll-relative-links
+  - jekyll-relative-links
 paginate: 20
 paginate_path: "/page/:num"
 
