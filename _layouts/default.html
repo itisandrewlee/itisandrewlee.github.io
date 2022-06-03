@@ -1,7 +1,7 @@
 {% include header.html %}
 <div class="container">
 	<div class="profile">
-		<a href="{{ site.url }}"><img src="{{site.author.picture}}" class="profile-image"></a>
+		<a href="{{ site.url }}"><img src="{{ site.url }}/{{site.author.picture}}" class="profile-image"></a>
 		<div class="profile-about">
 			<h2 style="margin-bottom: 0; font-weight: 700;">{{site.author.name}}</h2>
 			{% if site.author.github %}
@@ -26,6 +26,7 @@
 			<br>
 			{{ site.author.bio }}
 			<br>
+			<a href="{{ site.url }}" class="nav-item">Home</a>
 			<a href="{{ site.url }}/categories" class="nav-item">Categories</a>
 			<a href="{{ site.url }}/tags" class="nav-item">Tags</a>
 			<a href="{{ site.url }}/about" class="nav-item">About</a>

@@ -57,7 +57,7 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /:categories/:slug
+    permalink: /posts/:slug
   
 defaults:
   -
