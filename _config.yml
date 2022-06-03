@@ -6,7 +6,7 @@ description: >-
   personal blog
 lang: en-US
 timezone: America/Los_Angeles
-repo:  itisandrewlee.github.io
+repo: 
 google_verify:      XXX # Put your Google Verification here
 google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
 discus-identifier:  itisandrewlee
