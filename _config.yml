@@ -1,0 +1,83 @@
+# Site settings
+site: itisandrewlee
+title: It is Andrew Lee
+keywords: blog, Computer Science
+description: >-
+  personal blog
+lang: en-US
+timezone: America/Los_Angeles
+repo:  itisandrewlee.github.io
+google_verify:      XXX # Put your Google Verification here
+google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
+discus-identifier:  itisandrewlee
+
+# Author settings
+author:
+  name: Andrew Lee
+  bio: MS in Computer Science @ UC Davis <br> ML/DL, Robotics, Autonomous Driving
+  picture: assets/images/profile.png 
+  github: itisandrewlee # github username
+  twitter: itisandrewlee # twitter username
+  facebook:  # facebook username
+  instagram: andrewchoongwonlee # instagram username
+  youtube:  # youtube username
+  linkedin: andrewchoongwonlee # linkedin username
+  email: itisandrewlee@email.com # email adress
+
+
+# URL settings
+url: "itisandrewlee.github.io" # Domain Name of host. [username].github.io for github pages
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 20
+paginate_path: "/page/:num"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:categories/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false

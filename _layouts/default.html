@@ -1,0 +1,43 @@
+{% include header.html %}
+<div class="container">
+	<div class="profile">
+		<a href="{{ site.url }}"><img src="{{site.author.picture}}" class="profile-image"></a>
+		<div class="profile-about">
+			<h2 style="margin-bottom: 0; font-weight: 700;">{{site.author.name}}</h2>
+			{% if site.author.github %}
+			<a href="https://github.com/{{site.author.github}}" target="_blank"><i class="fa-brands fa-github social-icon"></i></a>
+			{% endif %}
+			{% if site.author.linkedin %}
+				<a href="https://linkedin.com/in/{{site.author.linkedin}}" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
+			{% endif %}
+			{% if site.author.facebook %}
+				<a href="https://facebook.com/{{site.author.facebook}}" target="_blank"><i class="fa-brands fa-facebook social-icon"></i></a>
+			{% endif %}
+			{% if site.author.instagram %}
+			<a href="https://instagram.com/{{site.author.instagram}}" target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a>
+			{% endif %}
+			{% if site.author.twitter %}
+				<a href="https://twitter.com/{{site.author.twitter}}" target="_blank"><i class="fa-brands fa-twitter social-icon"></i></a>
+			{% endif %}
+			{% if site.author.youtube %}
+				<a href="{{site.author.youtube}}" target="_blank"><i class="fa-brands fa-youtube social-icon"></i></a>
+			{% endif %}
+			<!-- <a href="about"><i class="fa-solid fa-user social-icon"></i></a> -->
+			<br>
+			{{ site.author.bio }}
+			<br>
+			<a href="/categories" class="nav-item">Categories</a>
+			<a href="/tags" class="nav-item">Tags</a>
+			<a href="/about" class="nav-item">About</a>
+			<br>
+			<div class="mode" id="mode-switcher" onclick="toggleNightMode();">
+				<span></span>
+			</div>
+		</div>
+	</div>
+	{{ content }}
+	<div class="footer">
+		<span style="text-align: center;"><i class="fa-solid fa-copyright"></i> 2022 <br> Powered by <a href="https://jekyllrb.com" target="_blank">Jekyll</a></span>
+	</div>
+</div>
+{% include footer.html %}
