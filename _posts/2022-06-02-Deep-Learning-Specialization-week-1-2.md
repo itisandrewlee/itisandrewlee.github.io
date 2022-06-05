@@ -1,5 +1,5 @@
 ---
-title: Deep Learning Specialization - Introduction
+title: Deep Learning Specialization - Week 1-2
 date: 2022-06-01
 author: Andrew Lee
 layout: post
