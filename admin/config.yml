@@ -8,7 +8,7 @@ collections:
   - name: 'Post'
     label: 'Post'
     folder: '_posts/'
-    preview_path: posts/{{slug}}
+    preview_path: posts/{{fields.slug}}
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
     fields:
