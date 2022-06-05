@@ -3,10 +3,12 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/media'
 public_folder: '/assets/media'
+publish_mode: editorial_workflow
 collections:
   - name: 'Post'
     label: 'Post'
     folder: '_posts/'
+    preview_path: posts/{{slug}}
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
     fields:
@@ -17,3 +19,4 @@ collections:
       - { label: 'slug', name: 'slug', widget: 'string'}
       - { label: 'categories', name: 'categories', widget: 'list'}
       - { label: 'tags', name: 'tags', widget: 'list'}
+      - { label: 'body', name: 'body', widget: 'markdown' }
