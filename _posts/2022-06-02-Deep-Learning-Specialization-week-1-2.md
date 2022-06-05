@@ -1,11 +1,14 @@
 ---
-title: Deep Learning Specialization - Week 1-2
+layout: post
+title: Deep Learning Specialization - Week 99
 date: 2022-06-01
 author: Andrew Lee
-layout: post
 slug: deep-learning-specialization-week-1-2
-categories: [Notes]
-tags: [Deep Learning, Coursera]
+categories:
+  - Notes
+tags:
+  - Deep Learning
+  - Coursera
 ---
 Lorem markdownum nimiumque inutile ulterius tum fluctus arbore aethere in
 laqueosque lorisque tabuerit. Timor pectoraque vetus conspiceris donis arbitrium
