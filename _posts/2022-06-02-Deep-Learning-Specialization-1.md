@@ -3,6 +3,7 @@ title: Deep Learning Specialization - Introduction
 date: 2022-06-01
 author: Andrew Lee
 layout: post
+slug: deep-learning-specialization-week-1-2
 categories: [Notes]
 tags: [Deep Learning, Coursera]
 ---
