@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: 'assets/media'
+public_folder: '/assets/media'
+collections:
+  - name: 'Post'
+    label: 'Post'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
+    fields:
+      - { label: 'layout', name: 'layout', widget: 'hidden', default: 'post'}
+      - { label: 'title', name: 'title', widget: 'string'}
+      - { label: 'date', name: 'date', widget: 'datetime'}
+      - { label: 'author', name: 'author', widget: 'string', default: 'Andrew Lee'}
+      - { label: 'slug', name: 'slug', widget: 'string'}
+      - { label: 'categories', name: 'categories', widget: 'list'}
+      - { label: 'tags', name: 'tags', widget: 'list'}
